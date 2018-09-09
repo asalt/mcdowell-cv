@@ -1,0 +1,211 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% for links
+\usepackage[colorlinks=true]{hyperref}
+
+% \hypersetup{
+%  pdfauthor={Alex Saltzman},
+%  pdftitle={resume},
+%  pdfkeywords={},
+%  pdfsubject={},
+%  pdflang={English},
+%  colorlinks,
+%  linkcolor={black},
+%  citecolor={black},
+%  urlcolor={blue}
+% }
+
+% fancy lists
+\usepackage{enumitem}
+
+
+
+% Set applicant's personal data for header
+\name{Alexander B. Saltzman}
+\address{Houston, TX 77054}
+\contacts{(281) 433-8545 \linebreak a.saltzman920@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+
+	% Print the content
+
+  % =============================================================================
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{2014 -- Present}{Ph.D. Biochemistry}{Baylor College of Medicine, Houston TX}
+      advisor: Anna Malovannaya, Ph.D.
+			\begin{itemize}
+        \item Thesis project on data generation and analysis of proteomic data.
+        \item Built and published \texttt{gpGrouper}, an alternative peptide
+          grouping program that considers mixed species patient-derived
+          xenografts. \href{https://www.ncbi.nlm.nih.gov/pubmed/30093420}{PMID 30093420}
+        \item Built automated pipelines for analyzing mass spectrometry data.
+        \item Performed quality-control and exploratory data analysis.
+        \item Effectively summarized and visualized thousands of datapoints.
+        \item Trained technicians and other scientists on software usage.
+        \item Collaborated with other scientists on proper statistical analysis
+          and modeling.
+			\end{itemize}
+		\end{cvsubsection}
+
+    \begin{cvsubsection}{2009 -- 2013}{BS, Biochemistry}{Texas A\&M University, College Station TX}
+			\begin{itemize}
+        \item Magna Cum Laude, GPA 3.7/4.0
+        \item \textbf{Undergraduate Research Scholar} : Competed a year-long
+          research program with an initial research proposal, primary laboratory
+          work, written thesis, and participation in a judged poster session.
+      \end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+  % =============================================================================
+
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}
+      {\bfseries Proficient In}
+      \begin{description}[style=multiline,align=left,labelindent=2em]
+        \item [languages] Python, R, \LaTeX, HTML, SQL
+				\item [technologies] Matplotlib, Numpy, Scipy, Pandas, scikit-learn,
+          Seaborn, plot.py, Dash, ggplot, tidyverse, R Shiny, Bash Scripting,
+          Git, Vim, Emacs, Ubuntu Linux, OSX
+			\end{description}
+		\end{cvsubsection}
+		\begin{cvsubsection}{}{}{}
+      {\bfseries Have Experience With}
+      \begin{description}[style=multiline,align=left,labelindent=2em]
+        \item [languages] MATLAB, Javascript,
+        \item [technologies] Django, Flask, Postgres, SQLite, unit testing,
+          Jinja, Nginx, Bootstrap
+			\end{description}
+		\end{cvsubsection}
+	\end{cvsection}
+
+  % =============================================================================
+
+	\begin{cvsection}{Selected Projects}
+		% \begin{cvsubsection}{Projects}{}{}
+    \begin{cvsubsection}{}{}{}
+
+			% \begin{itemize}
+			% \begin{labeling}{BMB Retreat }
+			% \begin{description}[leftmargin=8em,style=nextline,align=parleft]
+			\begin{description}[leftmargin=8em,style=multiline,align=parleft,labelwidth=!]
+
+      \item [\textbf{gpGrouper}] Protein inference software for bottom-up
+        proteomics with shared peptide peak area redistribution.
+        \href{https://github.com/asalt/gpgrouper}{GitHub: asalt/gpgrouper}.
+      \item [\textbf{RefProtDB}] Program for downloading protein sequences from
+        NCBI and condensing protein isoforms under a single gene identifier.
+        \href{https://github.com/asalt/RefProtDB}{GitHub: asalt/RefProtDB}.
+      \item [\textbf{BMB Retreat Website }] Built a sign-up and abstract
+        submission website in \texttt{Django} for the annual departmental
+        retreat.
+      \vspace*{1em} % make room for long label
+      \item [\textbf{tackle}] A CLI for downloading and plotting (scatter, PCA,
+        clustered heatmap) proteomics data stored at Baylor College of Medicine.
+      \item [\textbf{autogrouper}] A wrapper around \texttt{gpGrouper} that
+        automates data processing via connection to network proteomics database.
+      \item [\textbf{bcmproteomics}] A Python module for connecting to network
+        proteomics database via PyODBC. Provides containers for loading and
+        saving metadata and results.
+      \item [\textbf{filegrouper}] CLI for sorting files from one folder into
+        separate folders based on common names.
+        \href{https://github.com/asalt/filegrouper}{GitHub: asalt/filegrouper}.
+
+			\end{description}
+
+    \end{cvsubsection}
+		% \end{cvsubsection}
+	\end{cvsection}
+
+  % =============================================================================
+  \vspace*{6em} % so that it starts on next page
+	\begin{cvsection}{Teaching and Leadership}
+		\begin{cvsubsection}{2016 -- 2018}{Graduate Student Council
+        Representative}{Baylor College of Medicine}
+      \vspace*{1em} % make room for long label
+			\begin{itemize}
+        \item Organize events for graduate students including town halls,
+          fundraisers, and annual student symposium.
+        \item \textbf{Career Development Committee Head Rep :} Help organize
+          seminars with speakers on various post-graduate careers.
+          \begin{itemize}
+            \item Send invitations and coordinate speaker arrivals.
+          \end{itemize}
+        \end{itemize}
+
+    \end{cvsubsection}
+
+    \begin{cvsubsection}{}{}{}
+    \begin{description}[leftmargin=12em,style=multiline,align=parleft,labelwidth=!]
+      \item [Invited Reviewer : Thinking Like A Scientist Course] Lead a small
+        group in their analysis and presentation of a research paper.
+        \textit{Baylor College of Medicine : 2016} \vspace*{2em}
+      \item [First Year Graduate Student Mentor] Offered coursework and choosing
+        a mentor for a first year graduate student.
+        \textit{Baylor College of Medicine : 2015 -- 2016} \vspace*{1em}
+      \item [High School Tutor] Tutored students for the Texas Assessment of
+        Knowledge and Skills (TAKS) standardized math test.
+        \textit{Clear Lake High School : 2012}
+
+    \end{description}
+    \end{cvsubsection}
+
+	\end{cvsection}
+
+  % =============================================================================
+
+	\begin{cvsection}{Employment}
+
+		\begin{cvsubsection}{Jan -- July 2014}{Math Tutor}{San Jacinto Community College Student Success Center, Pasadena TX}
+      \begin{itemize}
+      \item Help students with homework and key concepts in a variety of topics.
+      \item Algebra, geometry, trigonometry, calculus, differential equations
+      \item Chemistry, physics, biology.
+      \end{itemize}
+    \end{cvsubsection}
+
+		\begin{cvsubsection}{2010--2013}{Student Researcher}{Texas A\&M Health Science Center, College Station TX}
+      \vspace*{2em} % make room for long subsection title
+			\begin{itemize}
+        \item Prepared buffer solutions, washed and autoclaved glassware,
+          stocked and organized reagents, filled out spending spreadsheets.
+        \item Assisted researches taking measurements and images in the mouse facility.
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+
+  % =============================================================================
+
+
+\end{document}
